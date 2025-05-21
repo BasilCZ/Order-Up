@@ -1,0 +1,12 @@
+up = keyboard_check(ord("W")) or gamepad_axis_value(0,gp_axislv) < 0
+down = keyboard_check(ord("S")) or gamepad_axis_value(0,gp_axislv) > 0
+left = keyboard_check(ord("A")) or gamepad_axis_value(0,gp_axislh) < 0
+right = keyboard_check(ord("D")) or gamepad_axis_value(0,gp_axislh) > 0
+menu_up = keyboard_check_pressed(ord("W")) or gamepad_button_check_pressed(0,gp_padu)
+menu_down = keyboard_check_pressed(ord("S")) or gamepad_button_check_pressed(0,gp_padd)
+menu_right = keyboard_check_pressed(ord("A")) or gamepad_button_check_pressed(0,gp_padr)
+menu_left = keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0,gp_padl)
+run = keyboard_check(vk_shift) or gamepad_button_check(0,gp_face3)
+confirm = keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(0,gp_face1)
+inventory = keyboard_check_pressed(ord("I")) or gamepad_button_check_pressed(0,gp_face4)
+back = keyboard_check_pressed(vk_escape) or gamepad_button_check_pressed(0,gp_face2)
