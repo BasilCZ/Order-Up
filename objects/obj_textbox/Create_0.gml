@@ -1,0 +1,9 @@
+text[0] = ""
+text_draw[0] = ""
+sprite[0] = spr_player_textbox_happy
+x_location = 0
+y_location = 0
+index = 0
+page = 0
+writing = false
+layer = layer_create(-450)
