@@ -1,6 +1,7 @@
 text[0] = ""
 text_draw[0] = ""
 sprite[0] = spr_player_textbox_happy
+name[0] = ""
 x_location = 0
 y_location = 0
 index = 0

@@ -1,3 +1,4 @@
+draw_self()
 if(writing == true){
 	draw_set_color(c_white)
 	//draw_set_font(fnt_textbox)
@@ -8,7 +9,9 @@ if(writing == true){
 		draw_sprite(sprite[page], 0, x_location+camera_get_view_width(view_camera[0])-100, y_location+600)
 	}
 	
-	draw_sprite(spr_textbox_box,0,x_location+670,y_location+650)
+	draw_sprite(spr_textbox_box,0,x_location+670,y_location+625)
+	
+	draw_text(x_location+55, y_location+512, name[page])
 	
 	if(index < string_length(text[page])){
 		index++
