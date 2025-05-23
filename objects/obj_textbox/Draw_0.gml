@@ -15,8 +15,18 @@ if(writing == true){
 		var smaller = string_width_ext(text_draw[page], 40, 11111230)
 		var larger = 1230
 	}
-	show_debug_message(48 * ceil(smaller/larger))
-	draw_sprite_stretched(spr_textbox_box_1, image_index,x_location+40,y_location+550,string_width_ext(text_draw[page], 40, 1230)+75,48)// * ceil(smaller/larger))
+	if(height < 48 * ceil(smaller/larger)){
+		height = 48 * ceil(smaller/larger)
+	}
+	if (width < string_width_ext(text_draw[page], 40, 1230)+40){
+		width = string_width_ext(text_draw[page], 40, 1230)+40
+	}
+	if(width < 1230 and sprite[page] != noone){
+		width = 1290
+	}
+
+	draw_sprite_stretched(spr_textbox_box, image_index,x_location+40,y_location+550,width,height)
+	draw_sprite_stretched(spr_textbox_box, image_index, x_location + 40, y_location + 500, string_width_ext(name[page], 40, 1230)+40,48)
 	draw_text(x_location+55, y_location+512, name[page])
 	
 	if(index < string_length(text[page])){
@@ -24,5 +34,5 @@ if(writing == true){
 		text_draw[page] += string_char_at(text[page],index)
 		
 	}
-	draw_text_ext(x_location+60,y_location+575,text_draw[page],40,1230)
+	draw_text_ext(x_location+60,y_location+565,text_draw[page],40,1230)
 }

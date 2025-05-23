@@ -52,7 +52,6 @@
     {"id":{"name":"spr_player_textbox_happy","path":"sprites/spr_player_textbox_happy/spr_player_textbox_happy.yy",},},
     {"id":{"name":"spr_player_up_idle","path":"sprites/spr_player_up_idle/spr_player_up_idle.yy",},},
     {"id":{"name":"spr_player_up_walk","path":"sprites/spr_player_up_walk/spr_player_up_walk.yy",},},
-    {"id":{"name":"spr_textbox_box_1","path":"sprites/spr_textbox_box_1/spr_textbox_box_1.yy",},},
     {"id":{"name":"spr_textbox_box","path":"sprites/spr_textbox_box/spr_textbox_box.yy",},},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},},
   ],

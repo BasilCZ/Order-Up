@@ -1,6 +1,8 @@
 x_location = camera_get_view_x(view_camera[0])
 y_location = camera_get_view_y(view_camera[0])
 
+show_debug_message(index)
+
 var confirm_key = obj_controls.confirm
 var skip_key = obj_controls.run
 
@@ -12,7 +14,7 @@ if(writing == true){
 		text_draw[page] = ""
 	}
 	//Skips the text
-	if(skip_key == true and array_length(text)<=page){
+	if(skip_key == true and page < array_length(text)){
 		index = string_length(text[page])
 		text_draw[page] = text[page]
 	}
@@ -35,6 +37,8 @@ if(place_meeting(x,y,obj_player) and confirm_key == true){
 		index = 0
 		page = 0
 		writing = false
+		width = 0
+		height = 0
 		obj_player.can_move = true
 		obj_player.image_speed = 1
 		obj_player.image_index = 0

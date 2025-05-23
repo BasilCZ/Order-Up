@@ -1,9 +1,3 @@
-if(obj_controls.run){
-	spd = 5
-} else {
-	spd = 3
-}
-
 x_speed = (obj_controls.right - obj_controls.left) * spd
 y_speed = (obj_controls.down - obj_controls.up) * spd
 
@@ -15,6 +9,13 @@ if(place_meeting(x, y + y_speed, obj_collision)){
 }
 
 if(can_move){
+	if(obj_controls.run and (x_speed != 0 or y_speed != 0)){
+		spd = 5
+		image_speed = 2
+	} else {
+		spd = 3
+		image_speed = 1
+	}
 	x+=x_speed
 	y+=y_speed
 	if(x_speed > 0){

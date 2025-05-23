@@ -4,6 +4,6 @@ name[0] = "Arlrrrrrrrrr"
 text[1] = "Yesssss"
 sprite[1] = spr_player_textbox_happy
 name[1] = "Long name lmao"
-text[2] = "Testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing"
+text[2] = "Testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing"
 sprite[2] = noone
 name[2] = "Test name"

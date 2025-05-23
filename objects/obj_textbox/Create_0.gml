@@ -7,4 +7,6 @@ y_location = 0
 index = 0
 page = 0
 writing = false
+width = 0
+height = 0
 layer = layer_create(-450)
